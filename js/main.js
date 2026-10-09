@@ -19,11 +19,26 @@
     a.target = "_blank";
     a.rel = "noopener";
 
-    const icon = document.createElement("span");
-    icon.className = "app-icon";
-    icon.textContent = app.name.charAt(0).toUpperCase();
-    if (app.color) icon.style.setProperty("--icon-bg", app.color);
-    icon.setAttribute("aria-hidden", "true");
+    // 画像があればサムネイル、なければ頭文字アイコンを表示
+    let visual;
+    if (app.image) {
+      visual = document.createElement("span");
+      visual.className = "app-thumb";
+      const img = document.createElement("img");
+      img.src = app.image;
+      img.alt = "";
+      img.width = 1200;
+      img.height = 630;
+      img.loading = "lazy";
+      img.decoding = "async";
+      visual.append(img);
+    } else {
+      visual = document.createElement("span");
+      visual.className = "app-icon";
+      visual.textContent = app.name.charAt(0).toUpperCase();
+      if (app.color) visual.style.setProperty("--icon-bg", app.color);
+    }
+    visual.setAttribute("aria-hidden", "true");
 
     const body = document.createElement("span");
     body.className = "app-body";
@@ -41,7 +56,8 @@
     link.textContent = hostOf(app.url);
 
     body.append(name, desc, link);
-    a.append(icon, body);
+    if (app.image) a.classList.add("has-thumb");
+    a.append(visual, body);
     li.append(a);
     return li;
   }
