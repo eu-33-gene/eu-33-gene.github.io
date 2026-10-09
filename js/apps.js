@@ -22,4 +22,10 @@ const APPS = [
     url: "https://fiba-ranking.com/",
     color: "#e0682b",
   },
+  {
+    name: "東京でんしゃマップ",
+    description: "東京の電車の路線と駅を地図で見られるマップ（試作版）。駅をえらぶと、着くまでの時間のめやすがわかります。",
+    url: "https://map.toiro.app/",
+    color: "#2e9e4f",
+  },
 ];
