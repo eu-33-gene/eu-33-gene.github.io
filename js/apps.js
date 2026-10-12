@@ -33,4 +33,11 @@ const APPS = [
     image: "images/tokyo-densha-map.webp",
     color: "#2e9e4f",
   },
+  {
+    name: "ヒーローゲーム",
+    description: "1対1で遊ぶヒーローゲーム。1台の画面で2人対戦も、合言葉でつなぐオンライン対戦もできます。",
+    url: "https://hero-game.toiro.app/",
+    image: "images/hero-game.webp",
+    color: "#0ea5e9",
+  },
 ];
