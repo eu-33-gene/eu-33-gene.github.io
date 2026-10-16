@@ -27,8 +27,8 @@ const APPS = [
     color: "#e0682b",
   },
   {
-    name: "東京でんしゃマップ",
-    description: "東京の電車の路線と駅を地図で見られるマップ（試作版）。駅をえらぶと、着くまでの時間のめやすがわかります。",
+    name: "首都圏でんしゃマップ",
+    description: "首都圏の電車の路線と駅を地図で見られるマップ（試作版）。駅をえらぶと、着くまでの時間のめやすがわかります。",
     url: "https://map.toiro.app/",
     image: "images/tokyo-densha-map.webp",
     color: "#2e9e4f",
