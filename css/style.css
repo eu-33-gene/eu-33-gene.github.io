@@ -82,11 +82,6 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-family: "Quicksand", "Inter", "Noto Sans JP", system-ui, sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  letter-spacing: 0.08em;
-  line-height: 1;
   text-decoration: none;
 }
 
@@ -131,6 +126,12 @@ a {
   :root:not([data-theme="light"]) .icon-moon {
     display: none;
   }
+}
+
+.site-wordmark {
+  display: block;
+  height: 22px;
+  width: auto;
 }
 
 .site-logo {
