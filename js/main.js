@@ -62,9 +62,17 @@
     return li;
   }
 
-  grid.append(...APPS.map(createCard));
+  if (grid) grid.append(...APPS.map(createCard));
 
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  // メールアドレスはスパム対策のためJSで組み立てる
+  const mail = document.getElementById("contact-mail");
+  if (mail) {
+    const addr = ["hello", "toiro.app"].join("@");
+    mail.href = "mailto:" + addr;
+    mail.textContent = addr;
+  }
 
   // ライト／ダークモード切替
   document.querySelector(".theme-toggle").addEventListener("click", function () {

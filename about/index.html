@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | toiro</title>
+  <meta name="description" content="toiro を運営している eugene の紹介ページです。">
+  <meta property="og:title" content="About | toiro">
+  <meta property="og:description" content="toiro を運営している eugene の紹介ページです。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://eu-33-gene.github.io/images/logo-512.png">
+  <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="../images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="canonical" href="https://toiro.app/about/">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // 保存済みのテーマを描画前に反映（ちらつき防止）
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="../">
+        <img class="site-logo" src="../images/logo.svg" alt="" width="36" height="36">
+        <svg class="site-wordmark" viewBox="30 30 1010 260" role="img" aria-label="toiro">
+<g fill="none" stroke="currentColor" stroke-width="38">
+<path d="M98 66V212Q98 262 152 262H160"/>
+<path d="M42 130H160"/>
+<circle cx="334" cy="194" r="67"/>
+<path d="M537 118V277"/>
+<path d="M687 277V190Q687 129 748 129H778"/>
+<circle cx="941" cy="194" r="67"/>
+</g>
+<circle cx="537" cy="60" r="24" fill="currentColor"/>
+        </svg>
+      </a>
+      <button class="theme-toggle" type="button" aria-label="ライト／ダークモードを切り替え">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1>About</h1>
+      <p>toiro を運営している eugene の紹介です。</p>
+    </section>
+
+    <div class="about">
+      <section>
+        <h2>eugene</h2>
+        <p>
+          ふだんの暮らしの中で「こんなのあったらいいな」と思ったものを、ひとりでこつこつ作っています。
+          むずかしい操作や会員登録はなるべくいらない、ひらいてすぐ使えるアプリが好きです。
+        </p>
+        <p>
+          作ったものは、ほそぼそと、のんびり育てています。使ってくれた方の「便利だった」が何よりの励みです。
+        </p>
+      </section>
+
+      <section>
+        <h2>toiro について</h2>
+        <p>
+          toiro は、個人で作ったアプリをまとめて置いている場所です。
+          名前には、いろいろな人の「あったらいいな」に応えられる様々なアプリの「いろ」を出したい、という気持ちをこめています。
+        </p>
+        <p><a href="../">アプリの一覧を見る</a></p>
+      </section>
+
+      <section>
+        <h2>ご連絡先</h2>
+        <p>
+          ご意見・ご感想、不具合のご報告などはこちらへどうぞ。返信にはお時間をいただくことがあります。
+        </p>
+        <p><a id="contact-mail" href="#"><noscript>hello [at] toiro.app</noscript></a></p>
+      </section>
+
+      <section>
+        <h2>リンク</h2>
+        <p><a href="https://github.com/eu-33-gene" target="_blank" rel="noopener">GitHub</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> eugene</span>
+      <span class="footer-links">
+        <a href="../">Apps</a>
+        <a href="https://github.com/eu-33-gene" target="_blank" rel="noopener">GitHub</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
