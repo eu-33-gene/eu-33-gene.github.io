@@ -291,6 +291,36 @@ main {
   color: var(--text);
 }
 
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* About */
+.about {
+  max-width: 640px;
+  padding-bottom: 80px;
+}
+
+.about section + section {
+  margin-top: 40px;
+}
+
+.about h2 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.about p {
+  margin: 0 0 12px;
+}
+
+.about a {
+  color: var(--accent);
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 0 16px;
